@@ -1,0 +1,414 @@
+.navvar{
+    display: flex;
+    justify-content: space-around;
+    /* margin-top: 30px; */
+    background-color: rgb(119, 119, 240);
+    height: 80px;
+    align-items: center;
+    /* position: fixed; */
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.navvar a{
+    text-decoration: none;
+}
+.section21{
+    padding: 12px;
+}
+ .section21 b{
+    color: white;
+}
+.title,.all-category,.search,.area{
+   align-items:  center;
+   /* border: 2px solid blue; */
+    height: 50px;
+    /* background-color: rgb(40, 40, 241); */
+    border-radius: 20px;
+    box-shadow: rgba(4, 159, 248, 0.25) 0px 25px 50px -12px;
+}
+.header{
+    background-color: rgb(119, 119, 240);
+}
+.header h1{
+    padding-left: 490px;
+    margin-top:40px;
+    width: 400px;
+    /* background-color: rgb(55, 55, 245); */
+}
+input{
+    width: 300px;
+    height: 30px;
+}
+#search{
+   height: 30px;
+   width: 100px;
+}
+select{
+    width: 200px;
+    height: 30px;
+}
+.find-area{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+    height: 120px;
+    background-color: rgb(167, 190, 252);
+}
+#search{
+    color:blue
+}
+button{
+    width: 100px;
+    height: 30px;
+    background-color: rgb(0, 222, 251);
+    border: none;
+}
+button:hover{
+    cursor: pointer;
+}
+.line{
+    padding-left: 430px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 40px;
+}
+.section1{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+}
+.section11{
+    display: flex;
+    
+}
+.update span{
+    color: rgb(0, 222, 251);
+}
+.section11 div{
+    background-image: url(images/pexels-magda-ehlers-985266.jpg);
+    color:white;
+    padding: 10px;
+    left: 0;
+    margin-top: 20px;
+    margin:10px;
+    background-color: rgb(106, 106, 231);
+    box-shadow: rgba(4, 159, 248, 0.25) 0px 25px 50px -12px;
+}
+.section2{
+    display: flex;
+    justify-content: space-around;
+}
+.section21 b{
+    color: rgb(0, 195, 255);
+}
+.section21 h2{
+   color: white;
+}
+.section21 p{
+    width: 500px;
+    color: rgb(160, 156, 156);
+    line-height: 32px;
+}
+.section21{
+    margin: 20px;
+    margin-left:50px;
+    box-shadow: rgba(4, 159, 248, 0.25) 0px 25px 50px -12px;
+    background-color: rgb(29, 25, 25);
+}
+.section3{
+    display: flex;
+    flex-direction: column;
+}
+.text{
+    margin-top: 30px;
+    padding-left: 500px;
+}
+.job-category{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-around;
+}
+.job-category div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    padding: 32px;
+}
+.job-category div:hover{
+    border: 1px solid rgb(106,106,231);
+}
+.job-type{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+}
+.job-type div{
+     margin-left: 20px;
+}
+.section41{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.section41 div{
+    margin-top: 12px;
+}
+.logo-work{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.logo-work button{
+    margin-top: 10px;
+}
+.job-title{
+    display: flex;
+    width: 600px;
+}
+
+.job-title div{
+    margin-left: 20px;
+}
+.job-location button{
+    width: 300px;
+    background-color:transparent;
+
+}
+#city{
+    margin-left: 32px;
+}
+.section4{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.job-location,.job-by-category{
+    margin-top:90px;
+    height: 450px;
+    background-color: rgb(106, 106, 231);
+}
+.job-location div{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    margin:12 22 22 52;
+    width: 300px;
+    margin-top: 22px;
+    margin-left: 52px;
+    background-color: rgb(71, 71, 255);
+}
+.section42{
+    display:flex;
+    flex-direction: column;
+   
+}
+.job-location h2{
+    margin-top: 42px;
+    text-align: center;
+}
+.job-location button:hover{
+        background-color: black;
+        color: white;
+   }
+.job-title div{
+    padding: 22px;
+    margin-top: 67px;
+    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px; */
+}
+.job-title{
+    background-color: rgb(106, 106, 231);
+}
+.job-post{
+
+    background-color:rgb(106, 106, 231);
+    margin-top: 10px;
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#creative{
+    text-align: center;
+    margin: 12px 0;
+    padding-top: 62px;
+    width: 300px;
+    margin-left: 20px;
+    height: 150px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    background-image: linear-gradient( to right,rgb(199, 199, 251),rgb(106,106,231));
+}
+.job-post b{
+    margin-top: 22px;
+}
+.btn{
+    margin-left: 125px;
+}
+.description button{
+   float: right;
+}
+.job-post button{
+    border-radius: 20%;
+    width:30px;
+    height: 30px;
+    margin-left: 10px;
+}
+.job-advice-blog{
+    margin-top: 10px;
+    background-color: rgb(106, 106, 231);
+}
+.second{
+    margin-top: 10px;
+}
+.job-advice-blog div{
+    height: 100px;
+    padding: 30px;
+    text-align: center;
+}
+.blog{
+    background-image: url(images/pexels-magda-ehlers-985266.jpg);
+    margin: 12px;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    width: 320px;
+}
+.blog:hover{
+    cursor: pointer;
+}
+.job-advice-blog h2{
+    width: 250px;
+}
+.section5{
+    text-align: center;
+    padding:120px;
+    margin-top: 100px;
+    background-image: linear-gradient( to right,rgb(199, 199, 251),rgb(106,106,231));
+
+}
+.button  button{
+    margin-top: 100px;
+    width: 300px;
+    height: 40px;
+}
+.div button{
+     margin-top: 100px;
+    width: 300px;
+    height: 40px;
+}
+.button button:hover{
+     background-color: rgb(160, 156, 156);
+}
+.button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.app button{
+    height: 100px;
+    width: 200px;
+    padding: 12px;
+}
+.section62{
+    width:300px;
+    display: flex;
+    flex-direction: column;
+}
+.section62 div{
+    margin-top: 22px;
+}
+.section6{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.app button{
+    background-color: whitesmoke;
+}
+.app button:hover{
+    color: white;
+    box-shadow: 2px 2px 2px 1px rgb(106, 106, 231);
+    background-color: rgb(103,103,231);
+    border-radius: 20px;
+}
+.app-button{
+
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row ;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.app-button div{
+      margin-left: 20px;
+}
+.section71{
+    display: flex;
+    margin-top: 71px;
+    flex-direction: column;
+}
+.section71 div{
+    margin-top: 20px;
+}
+.section71 a{
+    text-decoration: none;
+    color:blue;
+}
+.section71 a:hover{
+    color: rgb(0, 195, 255);
+}
+.section7{
+    margin-top: 120px;
+    display: flex;
+    height: 500px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: black;
+}
+.section7 h3{
+    color: white;
+}
+.photoes{
+    display: flex;
+    flex-direction: row;
+}
+.photoes img{
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+}
+.section7 {
+    padding-top:50px ;
+}
+.section72,.section73{
+    margin-top: 72px;
+}
+.section73 div{
+    margin-top: 10px;
+}
+.section7 input{
+    height: 40px;
+}
+.section73{
+    margin-top: 73px;
+}
+.section72 div{
+    margin-top: 20px;
+}
+.section7 h4{
+    color: white;
+}
+.copyright{
+    background-color: black;
+    /* margin-top: 20px; */
+    color: white;
+}
+.icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
