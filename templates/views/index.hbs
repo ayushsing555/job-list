@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            {{>navvar}}
+            <div class="update">
+                <h1><span>1500+</span>Jobs posted last week</h1>
+            </div>
+            <div class="find-area">
+                <div class="title">
+                    <input  type="text" placeholder="  What are you looking for?">
+                </div>
+                <div class="area">
+                  <select id="area" style="height: 40px;width: 250px;">
+                      <option value="">select area </option>
+                      <option value="">Dhaka</option>
+                      <option value="">Rajshani</option>
+                      <option value="">Barishal</option>
+                      <option value="">Naakhali</option>
+                  </select>
+                </div>
+                <div class="all-category">
+                    <select id="category" style="height: 40px;width: 250px;">
+                        <option value="">All Category</option>
+                        <option value="">Medical</option>
+                        <option value="">Technology</option>
+                        <option value="">Government</option>
+                        <option value="">Development</option>
+                    </select>
+                </div>
+                <div class="search">
+                    <button id="search" style="height: 40px;">Search</button>
+                </div>
+                </div>
+                <div class="line">
+                    <b><span id="search">search by tags:</span>  Tecnology, Business, Consulting, IT Company, Design, Development</b>
+                </div>
+        </div>
+        <div class="section1">
+           <div class="section11">
+            <div>
+                <h1>Searching</h1>
+               <p>Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam dolore qui reiciendis, dolor libero ex nemo consectetur quaerat ipsa voluptatum? dolor sit amet, consectetur adipisicing</p>
+            </div>
+            <div>
+                <h1>Applying</h1>
+                <p>Lorem ipsum  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam dolore qui reiciendis, dolor libero ex nemo consectetur quaerat ipsa voluptatum? dolor sit amet, consectetur adipisicing.</p>
+            </div>
+            <div>
+                <h1>Security</h1>
+                <p>Lorem ipsum  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam dolore qui reiciendis, dolor libero ex nemo consectetur quaerat ipsa voluptatum? dolor sit amet, consectetur adipisicing.</p>
+            </div>
+            <div>
+                <h1>Notifications</h1>
+                <p>Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam dolore qui reiciendis, dolor libero ex nemo consectetur quaerat ipsa voluptatum? dolor sit amet, consectetur adipisicing</p>
+            </div>
+           </div>
+           <div class="section2">
+               <div class="section21">
+                   <h2>Creative designer</h2>
+                   <b>Los Angeles</b>
+                   <p>
+                    Lorem ipsum dolor sit amet ullan consectetur adipisicing elit. Iste voluptates culpa laudantium eaque aliquam ullam veniam quisquam mollitia fuga cumque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste voluptates culpa laudantium eaque aliquam ullam veniam quisquam mollitia fuga cumque.
+                   </p>
+                   <button> View job</button>
+               </div>
+               <div class="section21">
+                <h2>Creative designer</h2>
+                <b>Los Angeles</b>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste voluptates culpa laudantium eaque aliquam ullam veniam quisquam mollitia fuga cumque.Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste voluptates culpa laudantium eaque aliquam ullam veniam quisquam mollitia fuga cumque.
+                </p>
+                <button> View job</button>
+            </div>
+           </div>
+        </div>
+        <div class="section3">
+            <div class="text">
+                <h1>Featured Job Categories</h1>
+                <p>Who are in extremely love with eco friendly system.</p>
+            </div>
+            <div class="job-category">
+                 <div class="category">
+                     <img src="images/accounting.png">
+                     <p>Accounting</p>
+                 </div>
+                 <div class="category">
+                     <img src="images/development.png" alt="">
+                     <p>Development</p>
+                 </div>
+                 <div class="category">
+                     <img src="images/government.png" alt="">
+                     <p>Government</p>
+                 </div>
+                 <div class="category">
+                     <img src="images/madical.png" alt="">
+                     <p>Medical</p>
+                 </div>
+                 <div class="category">
+                     <img src="images/media.png" alt="">
+                     <p>Media & news</p>
+                 </div>
+            </div>
+        </div>
+        {{>section4}}
+       </center>
+      {{>section5}}
+        {{>section6}}
+          {{>section8}}
+         {{>section9}}
+         {{>section10}}
+          {{>footer}}
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+{
+  "name": "staticwebsite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ayushsing555/job-list.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ayushsing555/job-list/issues"
+  },
+  "homepage": "https://github.com/ayushsing555/job-list#readme",
+  "dependencies": {
+    "express": "^4.17.3",
+    "hbs": "^4.2.0"
+  }
+}
