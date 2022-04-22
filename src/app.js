@@ -10,9 +10,12 @@ app.set("view engine","hbs");
 app.set("views",temp_path);
 hbs.registerPartials(partial_path);
 app.use(express.static(statis_path));
-app.get("/home",(req,res)=>{
+app.get("",(req,res)=>{
     res.render("index");
 });
+app.get("/home",(req,res)=>{
+    res.render("index")
+})
 app.get("/about",(req,res)=>{
     res.render("about");
 })
