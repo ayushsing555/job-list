@@ -1,4 +1,5 @@
 const express=require("express");
+const bcrypt = require("bcrypt");
 const app=express();
 require("../src/db/conn");
 const User = require("../src/model/data");
@@ -61,8 +62,12 @@ app.post("/login",async(req,res)=>{
         const userName = req.body.userName;
         const result  = await User.findOne({city:city})
         console.log(result);
-        if(result.userName==userName){
+        const isMatch = await bcrypt.compare(userName,result.userName)
+        if(isMatch){
             res.render("index");
+        }
+        else{
+            res.send("enter right userName")
         }
     }
     catch(e){
