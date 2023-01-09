@@ -1,5 +1,7 @@
+require("dotenv").config()
 const express=require("express");
 const bcrypt = require("bcrypt");
+const jwt = require("jsonwebtoken");
 const app=express();
 require("../src/db/conn");
 const User = require("../src/model/data");
@@ -14,6 +16,7 @@ app.set("views",temp_path);
 hbs.registerPartials(partial_path);
 app.use(express.static(statis_path));
 app.use(express.urlencoded({extended:true}));
+console.log(process.env.SECRET_KEY);
 app.get("",(req,res)=>{
     res.render("index");
 });
@@ -48,6 +51,8 @@ app.post("/register",async(req,res)=>{
             firstName:req.body.firstName,
             city:req.body.city
         })
+        const token = await oneuser.generateToken();
+        // console.log(token);
         const result = await oneuser.save();
         console.log(result);
         res.render("login");
@@ -61,7 +66,8 @@ app.post("/login",async(req,res)=>{
         const city = req.body.city;
         const userName = req.body.userName;
         const result  = await User.findOne({city:city})
-        console.log(result);
+        const token =await  result.generateToken();
+        console.log(token);
         const isMatch = await bcrypt.compare(userName,result.userName)
         if(isMatch){
             res.render("index");
@@ -76,6 +82,19 @@ app.post("/login",async(req,res)=>{
     }
 
 })
+
+//! practicing jsonwebtoken(jwt)
+// const creatToken = async()=>{
+//     const token = jwt.sign({_id:"63ba7ea3f43ad3da636241ad"},"iamayushsinghaliwanttofullstackwebdeveloper",{
+//         expiresIn:"2 sec"
+//     });
+//     console.log(token);
+//     const userVar = jwt.verify(token,"iamayushsinghaliwanttofullstackwebdeveloper");
+//     console.log(userVar);
+// }
+
+// creatToken();
+
 app.listen(port,"127.0.0.1",()=>{
     console.log(" listen successful ");
 });
